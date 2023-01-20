@@ -1,0 +1,135 @@
+---
+title: "ANALISIS PENGARUH EKSPOR BATUBARA KE NEGARA TIONGKOK TERHADAP NILAI TUKAR RUPIAH PADA TAHUN 2012-2021"
+subtitle: "Metodologi Penelitian"
+author: "Jessica Ayu Katherine"
+date: 2023-01-19
+number-sections: true
+format:
+  html: default
+  docx: default
+editor: visual
+---
+
+![](poltekapp.jpg)
+
+## Pendahuluan
+
+### Latar belakang
+
+Indonesia merupakan negara yang memiliki sumber daya alam yang berlimpah dan sangat berpotensi untuk dapat menjadi negara dengan tingkat ekspor yang tinggi. Perdagangan merupakan salah satu alternatif untuk mencapai suatu perkembangan dalam transaksi ekspor terutama apabila mencapai skala internasional yaitu perdagangan internasional. Perdagangan internasional merupakan perdagangan yang terjadi karena sebuah negara memiliki sumber daya yang berbeda dengan negara lainnya dan terlibat aktivitas perdagangan yang sama-sama aktif memproduksi barang tertentu dengan jumlah yang besar dan kualitas yang baik (Basri dan Munandar). Salah satu upaya yang perlu dilakukan untuk memicu pertumbuhan ekonomi yaitu dengan meningkatkan ekspor dan daya saing. Dengan demikian, ekapor menjadi salah satu faktor penting dalam aktifitas ekonomi bagi setiap negara, dikarenakan ekspor mempunyai peran penting terhadap pertumbuhan ekonomi untuk meningkatkan cadangan devisa suatu negara. Seluruh unit usaha atau jumlah nilai barang dan jasa akhir yang dihasilkan oleh seluruh unit ekonomi merupakan nilai Produk Domestik Bruto (PDB). Oleh karena itu ekspor dapat menjadi nilai tambah untuk pertumbuhan ekonomi suatu negara khususnya Indonesia. Sebagai negara yang memiliki sumber daya alam yang melimpah, Indonesia memiliki potensi besar dalam meningkatkan nilai ekspor non migas, khususnya sumber energi non migas yaitu batubara. Indonesia merupakan salah satu eksportir batubara yang memiliki peran yang sangat penting sebagai pemasok batubara di dalam pasar internasional yaitu sekitar 24% Jepang, Tiongkok, Korea Selatan, dan Taiwan adalah negara tujuan ekspor utama batubara Indonesia.  Semakin besarnya konsumsi energi terutama minyak dan gas, menjadikan batubara sebagai sumber energi alternatif yang memiliki prospek bagus dimasa mendatang sebagai komoditi ekspor utama. Diiringi dengan ada faktor permintaan akan batubara itu sendiri.
+
+### Ruang lingkup
+
+Pada penelitian ini ruang lingkup mengenai pengaruh nilai tukar terhadap ekspor sumber energi non migas yaitu batubara, faktor -- faktor yang mempengaruhi hubungan nilai tukar terhadap ekspor batubara serta untuk mengetahui asumsi dan metode yang digunakan dapat menjelaskan pengaruh nilai tukar terhadap ekspor tersebut. Variabel yang digunakan dalam penelitian ini adalah total nilai ekspor batu bara ke Tiongkok.
+
+### Rumusan masalah
+
+Berdasarkan uraian latar belakang masalah diatas, maka terdapat beberapa indikator yang menjadi rumusan masalah dalam penelitian ini, adapun rumusan masalah tersebut adalah sebagai berikut:
+
+1.  Apakah nilai tukar rupiah berpengaruh terhadap nilai ekspor batubara Indonesia ke negara Tiongkok tahun 2012-2021?
+
+### Tujuan dan Manfaat Penilitian
+
+Tujuan dari penelitian ini adalah untuk meneliti dan menganalisis perkembangan ekspor batubara Indonesia, khususnya ke pasar Tiongkok, agar kita tahu bahwa seberapa besar pengaruh ekspor batubara terhadap devisa negara terutama nilai tukar rupiah pada tahun 2012-2021
+
+Adapun manfaat yang diperoleh dari penelitian ini adalah:
+
+1.  Secara teoretis, penelitian ini diharapkan mampu memberikan manfaat dan dampak positif pada bidang keilmuan. Khususnya, dalam mengenal seberapa besar pengaruh ekspor batubara Indonesia terhadap nilai tukar rupiah.
+2.  Secara praktis, penelitian ini mampu bermanfaat bagi pembaca umumnya, dan peneliti guna mengetahui pengaruh ekspor komoditi batubara indonesia ke negara Tiongkok terhadap nilai tukar rupiah pada tahun 2012-2021
+
+```{r}
+#| warning: false
+#| echo: true
+library(tidyverse)
+library(readxl)
+library(WDI) # tambahkan library lain jika diperlukan
+```
+
+## Studi pustaka
+
+Teori dan kebijakan perdagangan internasional merupakan aspek mikroekonomi ilmu ekonomi internasional sebab berhubungan dengan masing-masing negara sebagai individu yang diperlakukan sebagai unit tunggal, serta berhubungan dengan harga relatif satu komoditas (Salvatore, 1997). Teori Keunggulan Absolut oleh Adam Smith menyatakan bahwa perdagangan antar dua negara akan berdasar pada unsur keunggulan absolut pada komoditas tertentu yang dimiliki suatu negara. Negara yang memiliki komoditas unggulan tertentu relatif dibandingkan dengan mitra dagangnya dan akan mengeskpor komoditas tersebut ke negara mitra dagangnya. Menurut Undang-Undang Republik Indonesia Nomor 7 Tahun 2014 Tentang Perdagangan, Ekspor adalah kegiatan mengeluarkan barang dari daerah pabean. Ekspor barang dilakukan oleh pelaku usaha yang telah terdaftar dan ditetapkan sebagai eksportir, kecuali ditentukan lain oleh menteri. Secara fisik, ekspor adalah pengiriman dan penjualan barang-barang buatan dalam negeri ke negara-negara lain. Pengiriman ini akan menimbulkan pengeluaran yang masuk ke sektor perusahaan. Sehingga pengeluaran agregat akan meningkat akibat dari kegiatan mengekspor barang dan jasa yang pada akhirnya menyebabkan peningkatan pendapatan nasional (Sukirno, 2015).
+
+## Metode penelitian
+
+### Data
+
+| Tahun | Tiongkok      | Indonesia  |
+|-------|---------------|------------|
+| 2012  | 379830262000  | 850324400  |
+| 2013  | 357259852600  | 7997961200 |
+| 2014  | 182676076800  | 4089561600 |
+| 2015  | 1041299686000 | 233115320  |
+| 2016  | 142004646000  | 317905200  |
+| 2017  | 183827282800  | 4115333600 |
+| 2018  | 1869084518000 | 4184311600 |
+| 2019  | 212837674000  | 476478800  |
+| 2020  | 179635538600  | 4021493200 |
+| 2021  | 135017277533  | 1386093960 |
+
+Data yang akan diolah dan dianalisis dalam penelitian ini adalah data ekspor batubara merupakan data sekunder, yaitu data yang telah diolah pihak lain sebelumnya dari instansi yang berwenang dan terkait dengan sektor moneter yaitu Badan Pusat Statistik serta jurnal-jurnal ilmiah, website di internet, artikel dan literatur-literatur yang relevan dalam penelitian ini.
+
+```{r}
+#| label: fig-mpg
+#| fig-cap: "City and highway mileage for 38 popular models of cars.Color by number of cylinders"
+```
+
+### Metode analisis
+
+Teknik analisis yang digunakan dalam penelitian ini adalah teknik kuantitatif dan penjabaran deskriptif. Teknik analisis kuantitatif merupakan analisis yang dilakukan dengan perhitungan angka-angka yang faktor yang mempengaruhi indeks nilai tukar rupiah terhadap dolar Amerika Serikat yaitu nilai ekspor batubara ke negara Tiongkok pada tahun 2012-2021. Pendekatan yang digunakan adalah kuantitatif dengan mengaplikasikan model regresi linier berganda. Secara spesifik model tersebut dapat disajikan sebagai berikut:
+
+Yi=β0+β1Xi+μi
+
+Dimana: Yi adalah nilai tukar USD terhadap mata uang negara lain., β0 adalah koefisien konstanta; β1 adalah parameter; Xi adalah nilai ekspor dan μi adalah *error term*.
+
+### Pembahasan
+
+### Pembahasan Masalah
+
+| x (Tiongkok)  | y (Indonesia) |
+|---------------|---------------|
+| 379830262000  | 850324400     |
+| 357259852600  | 7997961200    |
+| 182676076800  | 4089561600    |
+| 1041299686000 | 233115320     |
+| 142004646000  | 317905200     |
+| 183827282800  | 4115333600    |
+| 1869084518000 | 4184311600    |
+| 212837674000  | 476478800     |
+| 179635538600  | 4021493200    |
+| 135017277533  | 1386093960    |
+
+### Analisis Masalah
+
+Hasil regresinya adalah
+
+```{r}
+reg<-lm(hwy~cty,data=mpg)
+summary(reg)
+```
+
+```{r}
+library(readxl)
+jessica<-read_excel("latihan.xlsx")
+reg<-lm(Y~X,data=jessica)
+```
+
+Ekspor batubara berpengaruh terhadap nilai tukar. hal tersebut sesuai dengan teori balance of payment, ekspor neto sering menjadi faktor yang dapat mendorong naik dan turunnya kurs mata uang suatu negara. Nilai koefisien ekspor sebesar 2.970e+02 berarti kenaikan perubahan ekspor neto mengakibatkan nilai kurs dolar terhadap masing-masing negara. Dengan hasil ini berarti pendapatan ekspor berpengaruh positif terhadap nilai tukar.
+
+## Kesimpulan
+
+Berdasarkan data Hasil Analisis kualitatif yang telah dilakukan, setelah diamati batubara cukup berpengaruh terhadap pendapatan negara dan Negara Indonesia merupakan salah satu pengekspor batubara terbesar di dunia.
+
+## Saran
+
+1.  Pemerintah Indonesia dan perusahaan pertambangan batubara diharapkan melakukan analisis daya saing batubara Indonesia di pasar internasional dan analisis permintaan ekspor batubara di masing-masing negarakonsumen utama batubara sehingga dapat memberikan informasi yang jelas dalam membuat kebijakan ekspor batubara Indonesia.Peneliti selanjutnya hendaknya dapat melakukan penelitian yang sama dengan obyek / tempat yang berbeda, serta menambahkan variabel-variabel lain seperti faktor inflasi, investasi swasta, dan variabel lain. Selain itu Seiring dengan meningkatnya kebutuhan energi nasional, pemerintah diharapkan untuk melakukan peningkatan cadangan batubara yang representatif serta berkelanjutan agar kebutuhan energi nasional khususnya energi batubara terpenuhi.
+2.  Bagi peneliti selanjutnya, mengingat semua variabel (harga batubara, GDP dan nilai tukar) dalam penelitian ini merupakan hal penting dalam mempengaruhi ekspor batubara terhadap nilai tukar rupiah, diharapkan hasil penelitian ini dapat dipakai sebagai acuan bagi peneliti selanjutnya untuk mengembangkan penelitian ini dengan mempertimbangkan variabel - variabel lain yang tidak dimasukkan dalam penelitian ini.
+
+## Referensi
+
+Anindita Theresia, Syaputra A.A. (2017). Analisis Pengaruh Kurs USD, Harga Batubara Acuan, dan Volume Produksi Terhadap Volume Ekspor Pada PT. Bukit Asam (Persero) Tbk. Jurnal Manajemen Industri dan Logistik. Vol. 1 No. 2.
+
+Wibowo Adhi C.G. Strategi Meningkatkan Pangsa Pasar Tiongkok Menjadi Negara Tujuan Utama Ekspor Batubara Indonesia 2004 - 2019.
+
+Badan Pusat Statistik, Statistika Indonesia, edisi 2019. Diakses dari Situs https://www.bps.go.id.
+
+M. A. U. SAPUTRI, "ANALISIS EKSPOR BATUBARA INDONESIA," vol. 10, no. 2, pp. 1--15, 2018
